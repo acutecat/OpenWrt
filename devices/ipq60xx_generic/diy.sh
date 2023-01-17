@@ -1,6 +1,8 @@
 #!/bin/bash
 shopt -s extglob
 
+rm -rf package/system/opkg && mv -f feeds/kiddin9/opkg package/system/
+
 rm -rf package/boot/uboot-envtools package/kernel package/firmware/ath11k* package/qca target/linux/generic target/linux/ipq60xx package/network/config/netifd feeds/kiddin9/fullconenat toolchain
 svn export --force https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/package/boot/uboot-envtools package/boot/uboot-envtools
 svn export --force https://github.com/coolsnowwolf/openwrt-gl-ax1800/trunk/package/firmware/ath11k-firmware package/firmware/ath11k-firmware
