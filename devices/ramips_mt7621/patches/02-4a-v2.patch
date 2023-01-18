@@ -84,7 +84,7 @@ index a0ee79ae23ce4..d05872337be26 100644
 -		led-failsafe = &led_status_yellow;
 -		led-running = &led_status_blue;
 -		led-upgrade = &led_status_yellow;
- 		label-mac-device = &gmac1;
+ 		label-mac-device = &wan;
  	};
  
 -	chosen {
@@ -208,7 +208,7 @@ index a0ee79ae23ce4..d05872337be26 100644
 +	ieee80211-freq-limit = <2400000 2500000>;
  };
  
- &gmac1 {
+ &switch0 {
 @@ -163,24 +60,3 @@
  		};
  	};
